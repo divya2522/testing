@@ -1,0 +1,248 @@
+baseURL = "https://gethugothemes.com/"
+theme = "dot"
+
+# customize color
+[params]
+primaryColor = "#02007e"
+secondaryColor = "#f9f9f9"
+textColor = "#636363"
+textColorDark = "#242738"
+whiteColor = "#ffffff"
+disableLanguageSwitchingButton = false
+
+[Languages]
+
+  # English Language
+  [Languages.en]
+  languageName = "En"
+  weight = 1
+  languageCode = "en-us"
+  title = "Dot"
+  dateFormat = "2 January 2006"
+  home = "Home"
+  # logo is for all page
+  logo = ""
+  # logo white is for homepage logo, you can use colorful logo too...
+  logoWhite = ""
+  copyright = " ©2018-19 EduCommerce Technologies Pvt. Ltd.All rights reserved."
+#content
+[Languages.en.content]
+  heading1 = "Admission Management"
+  heading2 = "Fees Management"
+  heading3 = "Communication Control"
+  heading4 = "Student Security"
+  heading5 = "School Branding"
+  heading6 = "Multi-Branch/Franchise Management"
+  para1 = "Systematic computerized admission process with student data & document collection and fees collection, complete visibility."
+  para2 = "Schedule session-wide fees, setup penalties & waivers, automatic due fees reminders,payment from app, website & in school, dashboard & MIS."
+  para3 = "Control which staff member can communicate with which class, get report of all messages exchanged, allow parents to reply or send message to teachers."
+  para6 = "Complete peace of mind with School Bus Tracking and RFID Bus attendance features. View all school vehicles on your smartphone."
+  para4 = "Promote your school brand through your very own school app.Let parents, students and teachers be your brand ambassador."
+  para5 = "If you have multiple branches or franchisees, control and monitor operations and data of all branches from one place."
+  heading01 = "Attendance Management"
+  heading02 = "Exam-Result Management"
+  heading03 = "Transport Management"
+  heading04 = "Timetable Management"
+  heading05 = "Fees Collection"
+  heading06 = "Library Management"
+  para01 = "Teachers can take attendance directly on their app or upload via excel. Leave approval and real-time update sent to parents on their app."
+  para02 = "Create custom exam patterns, schedule exams, publish results and print customized report cards for different classes in a jiffy."
+  para03 = "Create transport routes, assign students, manage pick-up drop points and live track school buses on web or app. AIS-140 compliant."
+  para04 = "Publish time-tables for classes and teachers visible to them on their apps. Manage Teacher substitution (Arrangements) in a click!"
+  para05 = "Schedule reminders, allow collection via app and web in addition to fees collection counters in school premises. Send receipts on app."
+  para06 = "Library management system where Students and Teachers can check books availability from their app, pay overdue fees and more."
+  heading001 = "School Communication"
+  heading002 = "Academics information"
+  heading003 = "Fees reminders & payment"
+  heading004 = "Attendance & Leave"
+  heading005 = "Exam-Result"
+  heading006 = "School Bus Tracking"
+  para001 = "School messages, notices & circulars, homework and more in one single place for anywhere anytime access from smartphone app"
+  para002 = "Get information about subjects & teachers, daily class time-table and learning content with attachments as shared by the teachers"
+  para003 = "See all due fees on the app, get fees due reminders and pay using credit/debit card, net-banking or eWallets directly from the app."
+  para004 = "Get real-time attendance notifications from the school for your ward. Send leave application with attachments from the app."
+  para005 = "Get exam schedules, automated reminders before exams, published results with analytics and more on your smartphone app."
+  para006 = "View School Bus pick-up and drop routes, live school bus location and get RFID attendance notifications for your ward."
+
+
+    # navigation
+    [Languages.en.menu]
+    [[Languages.en.menu.main]]
+           weight = 1
+           name = "resource"
+           url="pages"
+         
+        
+      # Dropdown menu
+      [[Languages.en.menu.main]]
+        weight = 2
+        name = "Solution"
+        url = "solution"
+        hasChildren = true
+         
+         # Dropdown menu
+          [[Languages.en.menu.main]]
+          parent = "Solution"
+          name = "School App"
+          url = "solution/schoolapp"
+          weight = 2
+          hasChildren = true
+
+              [[Languages.en.menu.main]]
+               parent = "School App"
+               name = "For School Staff"
+               url = "solution/schoolapp/forschoolstaff"
+               weight = 2
+
+               [[Languages.en.menu.main]]
+               parent = "School App"
+               name = "For Parent"
+               url = "solution/schoolapp/forparent"
+               weight = 2
+          
+          # Dropdown menu
+          [[Languages.en.menu.main]]
+          parent = "Solution"
+          name = "Student Security"
+          url = "pages/student_security"
+          weight = 3
+              [[Languages.en.menu.main]]
+               parent = "Student Security"
+               name = "School Bus GPS Tracking"
+               url = "pages/student_security/gps_tracking"
+               weight = 3
+               
+
+
+
+
+    # banner
+    [Languages.en.params.banner]
+      title = "Support Center & Knowledge base"
+      description = "Find advice and answers from our support team fast or get in touch"
+      image = "images/banner.jpg"
+      placeholder = "Have a question? Just ask here or enter terms"
+
+    # Topics
+    [Languages.en.params.topics]
+      title = "myly for School Owners"
+      title1 = "myly for Parents & Students"
+      title2="myly for Parents & Students"
+    
+    # call to action
+    [Languages.en.params.cta]
+      enable = true
+      title = "Didn't find an answer to your question?"
+      description = "Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam."
+      btnText = "contact us"
+      btnURL = "contact"
+
+    # contact
+    [Languages.en.params.contact]
+      title = "Got Any Questions"
+      content = "Submit the form and confirm your email address at <a class='text-primary' href='https://formspree.io/'>Formspree</a> Then add the following lines to contact page YAML Front Matter."
+
+    # footer social icon
+    
+    [[Languages.en.socialIcon]]
+       icon = "ti-facebook"
+      linkURL = "https://www.facebook.com/mylyapp"
+
+   [[Languages.en.socialIcon]]
+       icon = "ti-google"
+       linkURL = "https://plus.google.com/+Mylyapp/posts"
+      
+
+    [[Languages.en.socialIcon]]
+       icon = "ti-twitter-alt"
+      linkURL = "https://twitter.com/mylyapp"
+      
+    [[Languages.en.socialIcon]]
+      icon = "ti-linkedin"
+      linkURL = "https://www.linkedin.com/company/mylyapp"
+      
+    [[Languages.en.socialIcon]]
+     icon = "ti-youtube"
+      linkURL = "https://www.youtube.com/channel/UCoqMaXL11uSeUL4VEoYDQtg"
+
+    [[Languages.en.socialIcon]]
+       icon = "ti-pinterest-alt"
+      linkURL= "https://www.pinterest.com/mylyapp/technologies-in-schools/"
+
+
+
+
+
+  # Franch Language
+  [Languages.fr]
+  languageName = "Fr"
+  weight = 1
+  languageCode = "fr-fr"
+  title = "Dot"
+  dateFormat = "2 January 2006"
+  home = "Aidez-moi"
+  logo = "Dot"
+  copyright = "Les documents Hugo sont sous copyright © gethugothemes 2019."
+
+    # navigation
+    [Languages.fr.menu]
+    
+      [[Languages.fr.menu.main]]
+        weight = 2
+        name = "Faq"
+        url = "fr/faq"
+
+      [[Languages.fr.menu.main]]
+        weight = 2
+        name = "contact"
+        url = "fr/contact"
+
+      # Dropdown menu
+      [[Languages.fr.menu.main]]
+        weight = 2
+        name = "les sujets"
+        hasChildren = true
+
+          [[Languages.fr.menu.main]]
+          parent = "les sujets"
+          name = "Commencer"
+          url = "fr/installation"
+          weight = 2
+
+          [[Languages.fr.menu.main]]
+          parent = "les sujets"
+          name = "Compte et facturation"
+          url = "fr/billing-pricing"
+          weight = 3
+
+          [[Languages.fr.menu.main]]
+          parent = "les sujets"
+          name = "Dépannage"
+          url = "fr/features"
+          weight = 4
+
+    # banner
+    [Languages.fr.params.banner]
+      title = "Comment pouvons nous aider?"
+      description = "Trouvez rapidement des conseils et des réponses auprès de notre équipe d'assistance ou contactez-nous."
+      image = "images/banner.jpg"
+      placeholder = "Have a question? Just ask here or enter terms"
+
+    # pages
+    [Languages.fr.params.pages]
+      title = "Parcourir tous les sujets"
+    
+    # call to action
+    [Languages.fr.params.cta]
+      enable = true
+      title = "Vous n'avez pas trouvé de réponse à votre question?"
+      description = "Contactez-nous pour plus de détails sur les services supplémentaires et la tarification du travail personnalisé"
+      btnText = "Contactez nous"
+      btnURL = "fr/contact/"
+
+    # contact
+    [Languages.fr.params.contact]
+      title = "Vous avez des questions"
+      content = "Envoyez le formulaire et confirmez votre adresse e-mail à l'adresse <a class='text-primary' href='https://formspree.io/'>Formspree</a> Ajoutez ensuite les lignes suivantes pour contacter la page YAML Front Matter."
+
+   

@@ -1,0 +1,175 @@
+{{ define "main" }}
+
+  {{ "<!-- topics -->" | safeHTML }}
+  <section class="section bg-gray">
+    <div>
+
+      <!-- <div class="row justify-content-center"> -->
+          <div style="width:100%;">
+            
+        <img class="col-12 text-center">
+        {{with .Site.Params.topics.title}} <h2 class="section-title" style='text-align:center;font-size:36px'>{{ . }}</h2> {{ end }}
+        
+      </div>
+    </div><br><br><br>
+    <!-- <div class="container"> -->
+        <div style="display: flex;justify-content:space-between;margin-left:40px;margin-bottom:50px;">
+            <div class="internal-box">
+        <img src="/admission_management.png"style="margin-bottom:40px;" />
+        <h4 style="font-size:16px; font-family:roboto; font-weight: 500">{{.Site.Params.content.heading1}}</h4>
+        <p style="font-size: 12px;">{{.Site.Params.content.para1}}</p>
+        </div>
+        <div class="internal-box">
+        <img src="/fees_management2.png" style="margin-bottom:40px;"/>
+        <h4 style="font-size: 16px;font-family:roboto;font-weight: 500;">{{.Site.Params.content.heading2}}</h4>
+        <p style="font-size: 12px;">{{.Site.Params.content.para2}}</p>
+      </div>
+      <div class="internal-box">
+        <img src="/communication_control3.png" style="margin-bottom:40px;"/>
+        <h4 style="font-size: 16px;font-family:roboto;font-weight: 500;">{{.Site.Params.content.heading3}}</h4>
+          <p style="font-size: 12px;">{{.Site.Params.content.para3}}</p>
+        </div>
+      </div>
+        <div style="display: flex;justify-content:space-between;margin-left:40px;margin-bottom:20px;">
+          <div class="internal-box" >
+            <img src="/student_security4.png" style="margin-bottom:40px;"/>
+            <h4 style="font-size: 16px;font-family:roboto;font-weight: 500;">{{.Site.Params.content.heading4}}</h4>
+            <p style="font-size: 12px;">{{.Site.Params.content.para4}}</p>
+
+          </div>
+          <div class="internal-box">
+            <img src="/school_branding6.png" style="margin-bottom:40px;"/>
+            <h4 style="font-size: 16px;font-family:roboto;font-weight: 500;">{{.Site.Params.content.heading5}}</h4>
+            <p style="font-size: 12px;">{{.Site.Params.content.para5}}</p>
+
+          </div>
+          <div class="internal-box" >
+          <img src="/multi_branch_7.png" style="margin-bottom:40px;"/>
+          <h4 style="font-size: 16px;font-family:roboto;font-weight: 500;">{{.Site.Params.content.heading6}}</h4>
+          <p style="font-size: 12px;">{{.Site.Params.content.para6}}</p>
+        </div>
+        </div>
+        <div style="background-color:white">
+            <div style="width:100%;">
+            <img class="col-12 text-center">
+              {{with .Site.Params.topics.title1}} <h2 class="section-title" style='text-align:center;font-size:36px'>{{ . }}</h2> {{ end }}
+              
+            </div>
+
+        <div style="display: flex;justify-content:space-between;margin-bottom:50px;margin-left:40px;">
+            <div class="internal-box" >
+        <img src="/attendance_management01.png"style="margin-bottom:40px;" />
+        <h4 style="font-size:16px; font-family:roboto; font-weight: 500">{{.Site.Params.content.heading01}}</h4>
+        <p style="font-size: 12px;">{{.Site.Params.content.para01}}</p>
+        </div>
+        <div class="internal-box" >
+        <img src="/exam_result_management02.png" style="margin-bottom:40px;"/>
+        <h4 style="font-size: 16px;font-family:roboto;font-weight: 500;">{{.Site.Params.content.heading02}}</h4>
+        <p style="font-size: 12px;">{{.Site.Params.content.para02}}</p>
+      </div>
+      <div class="internal-box" >
+        <img src="/transport_management03.png" style="margin-bottom:40px;"/>
+        <h4 style="font-size: 16px;font-family:roboto;font-weight: 500;">{{.Site.Params.content.heading03}}</h4>
+          <p style="font-size: 12px;">{{.Site.Params.content.para03}}</p>
+        </div>
+      </div>
+        <div style="display: flex;justify-content:space-between;margin-left:40px;">
+          <div class="internal-box" >
+            <img src="/timetable_management_04.png" style="margin-bottom:40px;"/>
+            <h4 style="font-size: 16px;font-family:roboto;font-weight: 500;">{{.Site.Params.content.heading04}}</h4>
+            <p style="font-size: 12px;">{{.Site.Params.content.para04}}</p>
+
+          </div>
+          <div class="internal-box" >
+            <img src="/fees_collection_05.png" style="margin-bottom:40px;"/>
+            <h4 style="font-size: 16px;font-family:roboto;font-weight: 500;">{{.Site.Params.content.heading05}}</h4>
+            <p style="font-size: 12px;">{{.Site.Params.content.para05}}</p>
+         </div>
+         <div class="internal-box" >
+            <img src="/library_management_06.png" style="margin-bottom:40px;"/>
+            <h4 style="font-size: 16px;font-family:roboto;font-weight: 500;">{{.Site.Params.content.heading06}}</h4>
+            <p style="font-size: 12px;">{{.Site.Params.content.para06}}</p>
+         </div>
+          
+        </div>
+      </div>
+
+
+      <div style="width:100%;">
+          <img class="col-12 text-center">
+            {{with .Site.Params.topics.title2}} <h2 class="section-title"style='text-align:center;font-size:36px'>{{ . }}</h2> {{ end }}
+            
+          </div>
+
+      <div style="display: flex;justify-content:space-between;margin-bottom:50px;margin-left:40px;">
+          <div class="internal-box" >
+      <img src="/school_communication.png"style="margin-bottom:40px;" />
+      <h4 style="font-size:16px; font-family:roboto; font-weight: 500">{{.Site.Params.content.heading001}}</h4>
+      <p style="font-size: 12px;">{{.Site.Params.content.para001}}</p>
+      </div>
+      <div class="internal-box" >
+      <img src="/academic_info.png" style="margin-bottom:40px;"/>
+      <h4 style="font-size: 16px;font-family:roboto;font-weight: 500;">{{.Site.Params.content.heading002}}</h4>
+      <p style="font-size: 12px;">{{.Site.Params.content.para002}}</p>
+    </div>
+    <div class="internal-box" >
+      <img src="/fees_reminder.png" style="margin-bottom:40px;"/>
+      <h4 style="font-size: 16px;font-family:roboto;font-weight: 500;">{{.Site.Params.content.heading003}}</h4>
+        <p style="font-size: 12px;">{{.Site.Params.content.para003}}</p>
+      </div>
+    </div>
+      <div style="display: flex;justify-content:space-between;margin-left:40px;">
+        <div class="internal-box" >
+          <img src="/attendance_leave.png" style="margin-bottom:40px;"/>
+          <h4 style="font-size: 16px;font-family:roboto;font-weight: 500;">{{.Site.Params.content.heading004}}</h4>
+          <p style="font-size: 12px;">{{.Site.Params.content.para004}}</p>
+
+        </div>
+        <div class="internal-box" >
+          <img src="/exam_result.png" style="margin-bottom:40px;"/>
+          <h4 style="font-size: 16px;font-family:roboto;font-weight: 500;">{{.Site.Params.content.heading005}}</h4>
+          <p style="font-size: 12px;">{{.Site.Params.content.para005}}</p>
+       </div>
+       <div class="internal-box" >
+          <img src="/bus_tracking.png" style="margin-bottom:40px;"/>
+          <h4 style="font-size: 16px;font-family:roboto;font-weight: 500;">{{.Site.Params.content.heading006}}</h4>
+          <p style="font-size: 12px;">{{.Site.Params.content.para006}}</p>
+       </div>
+        
+      </div>
+
+           {{ "<!-- topic-item -->" | safeHTML }}
+        {{ range (where .Site.Pages "Type" "Solution") }}
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <a href="{{ .Permalink }}" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+            <i class="{{ .Params.Icon }} icon text-primary d-block mb-4"></i>
+            <h3 class="mb-3 mt-0">{{ .Title }}</h3>
+            <p class="mb-0">{{ .Params.Description }}</p>
+          </a>
+        </div>
+        {{ end }}
+      <!-- </div> -->
+    
+  </section>
+  {{ "<!-- /topics -->" | safeHTML }}
+
+  {{ if .Site.Params.cta.enable }}
+  {{ "<!-- call to action -->" | safeHTML }}
+  <section class="bg-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section bg-white shadow text-center">
+            {{ with .Site.Params.cta.title }} <h2 class="mb-4">{{ . }}</h2> {{ end }}
+            {{ with .Site.Params.cta.description }} <p class="mb-4">{{ . }}</p> {{ end }}
+            <a href="{{ with .Site.Params.cta.btnURL}}{{ . | absURL }}{{ end }}"
+              class="btn btn-primary">{{ with .Site.Params.cta.btnText}}{{ . }}{{ end }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ "<!-- /call to action -->" | safeHTML }}
+  {{ end }}
+
+{{ end }}
