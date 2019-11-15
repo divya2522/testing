@@ -1,79 +1,117 @@
-<nav class="navbar navbar-expand-lg navbar-light">
- <a class="navbar-brand" href="{{ .Site.BaseURL }}{{ .Language.LanguageName | lower }}">
-  {{ $logo:= .Site.Params.logo }}
-  {{ $logoWhite:= .Site.Params.logoWhite }}
-  {{ if (or (eq $logo "") (eq $logoWhite "")) }}
-  <!-- {{ .Site.Title }} -->
-  <img class="logo" src="/myly_logo.png"/>
-  {{ else }}
-  {{ if .IsHome }}
-  <img class="img-fluid" src="{{ $logoWhite | absURL }}" alt="{{ .Site.Title }}">
-  {{ else }}
-  <img class="img-fluid" src="{{ $logo | absURL }}" alt="{{ .Site.Title }}">
-  {{ end }}
-  {{ end }}
- </a>
- <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
-  aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
- </button>
-​
- <div class="collapse navbar-collapse text-center" id="navigation">
-  <ul class="navbar-nav ml-auto">
-   <li class="nav-item">
-    <a class="nav-link text-dark" href="{{ .Site.BaseURL }}{{ .Language.LanguageName | lower }}">{{ .Site.Params.home }}</a>
-   </li>
-   {{ range .Site.Menus.main }}
-   {{ if .HasChildren }}
-   <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-     aria-expanded="false">
-     {{ .Name }}
-    </a>
-    <div class="dropdown-menu" >
-     {{ range .Children }}
-     
-     <a class="nav-item dropdown nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-     aria-expanded="false">
-     {{ .Name }}
-    </a>
-     <div > 
-     {{ range .Children}}         
-       <a class="dropdown-item" href="{{ .URL | absURL }}">{{ .Name }}</a>         
-     {{ end }}
-    </div>
-    
-     {{ end }}
-    </div>
-   </li>
-   {{ else }}
-   <li class="nav-item">
-    <a class="nav-link text-dark" href="{{ .URL | absURL }}">{{ .Name }}</a>
-   </li>
-   {{ end }}
-   {{ end }}
-  </ul>
-  <a href=" http://blog.mylyapp.com/" target="_blank" style="color:black;font-size:16px;">BLOG1</a>
-  <!-- Language List -->
-  {{- if and .Site.IsMultiLingual (not .Site.Params.DisableLanguageSwitchingButton)}}
-  <select id="select-language" onchange="location = this.value;">
-   {{ $siteLanguages := .Site.Languages}}
-   {{ $pageLang := .Page.Lang}}
-   {{ range .Page.AllTranslations }}
-   {{ $translation := .}}
-   {{ range $siteLanguages }}
-   {{ if eq $translation.Lang .Lang }}
-   {{ $selected := false }}
-   {{ if eq $pageLang .Lang}}
-   <option id="{{ $translation.Language }}" value="{{ $translation.URL }}" selected>{{ .LanguageName }}
-   </option>
-   {{ else }}
-   <option id="{{ $translation.Language }}" value="{{ $translation.URL }}">{{ .LanguageName }}</option>
-   {{ end }}
-   {{ end }}
-   {{ end }}
-   {{ end }}
-  </select>
-  {{ end }}
- </div>
-</nav>
+<header class="header">
+      <div class="headerWidth">
+          <div class="grid -layout-auto">
+              <div class="col header-left"> <a href="/home" class="logoLink"><img src="../image/logo.png" alt="myly logo"></a> </div>
+              <div class="col header-right">
+                  <div class="navToggle">
+                      <svg height="24" viewBox="0 0 24 24" width="24" stroke-width="2" stroke-linecap="round" class="navToggle-icon -open">
+                          <line x1="2" x2="22" y1="6.5" y2="6.5"></line>
+                          <line x1="7" x2="22" y1="12.5" y2="12.5"></line>
+                          <line x1="2" x2="22" y1="18.5" y2="18.5"></line>
+                          <path d="M50,50
+       L100,100"
+                                style="stroke:#660000; fill:none;" />
+                      </svg> </svg> <img src="../image/cancel.png" class="navToggle-icon -close" />
+                  </div>
+                  <div class="nav">
+                      <nav role=navigation class=nav-menu>
+                          <ul class=sb-menu-center>
+                              <li id=sb-menu-app-li class=dropdown>
+                                  <a class=dropdown-toggle data-toggle=dropdown href=#>Solutions</a>
+                                  <script type="text/javascript">
+                                      /*<![CDATA[*/
+                                      $("ul.sb-menu-center li#sb-menu-app-li").hover(function () {
+                                          $(this).find(".dropdown-menu").stop(true, true).delay(200).fadeIn(500);
+                                          $(this).addClass('open');
+                                      });
+                                      /*]]>*/
+                                      $(document).click(function (e) {
+                                          //e.stopPropagation();
+                                          var container = $("li#sb-menu-app-li");
+                                          //check if the clicked area is dropDown or not
+                                          if (container.has(e.target).length == 0) {
+                                              $(container).find(".dropdown-menu").hide();
+                                              $(container).parent('.dropdown').removeClass('open');
+                                          }
+                                      });
+                                  </script>
+                                  <script type="text/javascript">
+                                      $(document).ready(function () {
+                                          $("li.sub-menu > a").click(function () {
+                                              if ($(this).parent().hasClass('openSub')) {
+                                                  $(this).parent().removeClass('openSub');
+                                                  $(this).next('.d').slideUp();
+                                              } else {
+                                                  $("li.sub-menu").find('.d').slideUp();
+                                                  $("li.sub-menu").removeClass('openSub');
+                                                  $(this).parent().addClass('openSub');
+                                                  $(this).next('.d').slideDown();
+                                              }
+                                          });
+                                      });
+                                  </script>
+                                  <ul id=sb-menu-app class="dropdown-menu dropdown-menu-center">
+                                      <li class=sub-menu>
+                                          <a href=javascript:;>School App</a>
+                                          <ol class=d>
+                                              <li class=li-option-base-erp><a href=/myly-admin-app-for-teachers>For School Staff </a></li>
+                                              <li class=li-option-base-erp><a href=/myly-app-for-parents-and-students>For Parents </a></li>
+                                          </ol>
+                                      </li>
+                                      <li class=sub-menu>
+                                          <a href=javascript:;>School Management</a>
+                                          <ol class=d>
+                                              <!--<li class=li-option-base-erp><a href=/admission-crm>Admission CRM</a></li>-->
+                                              <li class=li-option-base-erp><a href=/admission>Admission Management</a></li>
+                                              <li class=li-option-base-erp><a href=/base-erp>School Data Management</a></li>
+                                              <li class=li-option-base-erp><a href=/attendance-and-leave>Attendance &amp; Leave</a></li>
+                                              <li class=li-option-base-erp><a href=/fees> Fees Management </a></li>
+                                              <li class=li-option-base-erp><a href=/exam-result> Exam-Result Management </a></li>
+                                              <li class=li-option-base-erp><a href=/time-table> Timetable Management </a></li>
+                                              <li class=li-option-base-erp><a href=/library> Library Management </a></li>
+                                              <li class=li-option-base-erp><a href=/franchisee> Franchisee Management </a></li>
+                                          </ol>
+                                      </li>
+                                      <!--											<li class=sub-menu>
+                                                              <a href=javascript:;>Admission CRM</a>
+                                                          </li>-->
+                                      <li class=sub-menu>
+                                          <a href=javascript:;>Student Security</a>
+                                          <ol class=d>
+                                              <li class=li-option-base-erp><a href=/transport-solution>School Bus GPS Tracking</a></li>
+                                             <!-- <li class=li-option-base-erp><a href=#>School Bus RFID Attendance</a></li>-->
+                                          </ol>
+                                      </li>
+                                      <!--											<li class=sub-menu>
+                                                              <a href=javascript:;>Learning</a>
+                                                              <ol class=d>
+                                                                  <li class=li-option-base-erp><a href=/online-assessment>Online Assessment</a></li>
+                                                                  <li class=li-option-base-erp><a href=#>Student Portal </a></li>
+                                                                  <!--<li class=li-option-base-erp><a href=#>Learning Management System</a></li>
+                                                                  <li class=li-option-base-erp><a href=#>Third party content integration</a></li>
+                                                              </ol>
+                                                          </li>-->
+                                  </ul>
+                              </li>
+                              <li><a href=/news>News</a></li>
+                              <li><a href=/blog target=_blank>Blog</a></li>
+                              <li>
+                                  <div class=nav-callout>
+                                      <div class=dropdown>
+                                          <button class="-options -secondary -less-padding dropdown-toggle btn-grad" type=button data-toggle=dropdown> Get started <span class=caret></span></button>
+                                          <ul class="dropdown-menu dropdown-menu-btn" data-dropdown-in=flipInX data-dropdown-out=flipOutX>
+                                              <li><a href=https://web.mylyapp.com/ target=_blank>Login</a></li>
+                                              <li><a href="/register">Register</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </li>
+                          </ul>
+                      </nav>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="header-underline"></div>
+  </header>

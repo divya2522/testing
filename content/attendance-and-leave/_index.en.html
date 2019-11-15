@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="en-US">
+<head>
+{{ partial "header.html" . }}
+<script type="application/ld+json">
+    {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Attendance and Leave Management",
+    "description": "myly app enables teachers to easily manage essential everyday tasks like attendance and leave management online, with its user-friendly interface.",
+    "brand": {
+    "@type": "Thing",
+    "name": "Myly"
+    }
+    }
+</script>
+
+<script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement":
+    [
+    {
+    "@type": "ListItem",
+    "position": 1,
+    "item":
+    {
+    "@id": "https://www.mylyapp.com/ ",
+    "name": "Home"
+    }
+    },
+    {
+    "@type": "ListItem",
+    "position": 2,
+    "item":
+    {
+    "@id": "https://www.mylyapp.com/Attendance-and-Leave/",
+    "name": "Attendance-and-leave"
+    }
+    }
+    ]
+    }
+</script>
+</head>
+<style type="text/css">
+p {
+    text-align: center;
+}
+
+body {
+    text-align: center;
+}
+</style>
+
+<body>
+    <div id="wrapper">
+        {{ partial "navigation.html" . }}
+<!--<div class="attendance-banner"></div>-->
+<div class="hero-panel attendanceLeaveBannerBg"><img src="../image/hero-attendance-leave.jpg" alt="Attendance-and-Leave" /></div>
+
+<section id="fms-panel">
+    <div class="container">
+        <div class="clearfix"></div>
+        <div class="col-sm-12">
+            <div class="introduction-panel">
+                <article>
+                    <h1 class="text-center" style="color:#000;"><strong>Attendance and Leave Management</strong></h1>
+                    <p>myly Attendance Management provides an complete solution to schools to automate attendance taking, attendance reporting, leave application, leave approval and attendance analytics.</p>
+                    <p style="margin:0 0 18px">Integrated deeply with the school management system, myly Attendance software allows schools to capture attendance in multiple ways - teacher taking attendance on app, taking attendance on web-panel or uploading attendance by excel file. Parents are notified on their app in case the child is marked absent or on-leave in the school. Parents can apply for leave from their app and even submit medical certificate from the app.</p>
+                </article>
+                <div style="margin:auto; display:table;"> <button class="-options -secondary -less-padding font-incress rtpf">Download brochure</button></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div class="clearfix"></div>
+<section id="fms-features">
+    <div class="container">
+        <h2 class="banner-heading text-center"> <strong>Features &amp; Benefits</strong> </h2>
+        <div class="arrow-fms-left col-sm-1 hidden-xs visible-sm visible-md visible-lg" onclick="callFmsLeftArrow()"><i class="fa fa-angle-left" style="cursor:pointer" aria-hidden="true"></i></div>
+        <div class="col-xs-12 col-sm-10 col-md-5 hidden-xs visible-sm visible-md visible-lg">
+            <div class="iph-mobile right-align tofade animated fadeInUp">
+                <p>
+                    <img alt="hand-iphone" src="/image/webpanel-three.png" class="alignnone" />
+                    <div id="mobile" class="mobile lapi-fms">
+                        <div class="tech-slide-panal">
+                            <div data-index="1"> <img class="zoomIt fees-slide-mgmt" id="zoom_02" src="../image/mark-attendance-from-web-panel.png" alt="Mark attendance from Web-panel" /> </div>
+                            <div data-index="2"> <img class="zoomIt fees-slide-mgmt" id="zoom_02" src="../image/mark-attendance-from-myly-admin-app.png" alt="Mark Attendance from myly admin App" /> </div>
+                            <div data-index="3"> <img class="zoomIt fees-slide-mgmt" id="zoom_02" src="../image/upload-attendance-by-excel-file.png" alt="Upload attendance by excel file" /> </div>
+                            <div data-index="4"> <img class="zoomIt fees-slide-mgmt" id="zoom_02" src="../image/approve-reject-leaves.png" alt="Approve Reject Leaves" /> </div>
+                            <div data-index="5"> <img class="zoomIt fees-slide-mgmt" id="zoom_02" src="../image/attendance-analytics.png" alt="Attendance analytics" /> </div>
+                            <div data-index="6"> <img class="zoomIt fees-slide-mgmt" id="zoom_02" src="../image/parent-notifications.png" alt="Parent Notifications" /> </div>
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-1 hidden-xs visible-sm hidden-md hidden-lg">
+            <div class="arrow-fms-right" onclick="callFmsRightArrow()"><i class="fa fa-angle-right" style="cursor:pointer" aria-hidden="true"></i></div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-5 hidden-xs visible-sm visible-md visible-lg">
+            <div class="iph-mobile right-fmsalign tofade animated fadeInUp tech-slide-panal-right">
+                <div class="col-slide" data-id="1">
+                    <h4 class="feature-heading"><strong>Mark attendance from Web-panel</strong></h4>
+                    <p class="features-text">Teachers can mark attendance for individual students from their web-panel login. Attendance status includes Present, Absent, Half-day and On-leave.</p>
+                </div>
+                <div class="col-slide" data-id="2">
+                    <h4 class="feature-heading"><strong>Mark Attendance from myly admin App</strong></h4>
+                    <p class="features-text">Teachers can even mark attendance directly from their myly admin app. Attendance can be Saved for editing later or Published for finalization.</p>
+                </div>
+                <div class="col-slide" data-id="3">
+                    <h4 class="feature-heading"><strong>Upload attendance by excel file</strong></h4>
+                    <p class="features-text">Schools can even compile their attendance in excel files and upload them on the web-panel to mark attendance for students. </p>
+                </div>
+                <div class="col-slide" data-id="4">
+                    <h4 class="feature-heading"><strong>Approve/Reject Leaves</strong></h4>
+                    <p class="features-text">All leaves applied by the parents with complete details and attachments are visible on the web-panel from where they can be approved or rejected on merit.</p>
+                </div>
+                <div class="col-slide" data-id="5">
+                    <h4 class="feature-heading"><strong>Attendance analytics</strong></h4>
+                    <p class="features-text">When approving or rejecting a leave, see how many leaves this student has already taken so far and decide accordingly.</p>
+                </div>
+                <div class="col-slide" data-id="6">
+                    <h4 class="feature-heading"><strong>Parent Notifications</strong></h4>
+                    <p class="features-text">Automatic app notifications or SMS can be sent to parents if their child is marked Absent, On-leave etc. </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1 hidden-xs hidden-sm visible-md visible-lg">
+            <div class="arrow-fms-right" onclick="callFmsRightArrow()"><i class="fa fa-angle-right" style="cursor:pointer" aria-hidden="true"></i></div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-5 hidden-md hidden-lg hidden-sm visible-xs">
+            <div class="iph-mobile right-fmsalign tofade animated fadeInUp tech-slide-panal-res">
+                <div class="col-slide">
+                    <h4 class="feature-heading"><strong>Mark attendance from Web-panel</strong></h4>
+                    <p class="features-text">Teachers can mark attendance for individual students from their web-panel login. Attendance status includes Present, Absent, Half-day and On-leave.</p>
+                    <img src="../image/mark-attendance-from-web-panel-res.png" alt="Mark attendance from Web-panel" />
+                </div>
+                <div class="col-slide">
+                    <h4 class="feature-heading"><strong>Mark Attendance from myly admin App</strong></h4>
+                    <p class="features-text">Teachers can even mark attendance directly from their myly admin app. Attendance can be Saved for editing later or Published for finalization.</p>
+                    <img src="../image/mark-attendance-from-myly-admin-app-res.png" alt="Mark Attendance from myly admin App" />
+                </div>
+                <div class="col-slide">
+                    <h4 class="feature-heading"><strong>Upload attendance by excel file</strong></h4>
+                    <p class="features-text">Schools can even compile their attendance in excel files and upload them on the web-panel to mark attendance for students.</p>
+                    <img src="../image/upload-attendance-by-excel-file-res.png" alt="Upload attendance by excel file" />
+                </div>
+                <div class="col-slide">
+                    <h4 class="feature-heading"><strong>Approve/Reject Leaves</strong></h4>
+                    <p class="features-text">All leaves applied by the parents with complete details and attachments are visible on the web-panel from where they can be approvd or rejected on merit.</p>
+                    <img src="../image/approve-reject-leaves-res.png" alt="Approve/Reject Leaves" />
+                </div>
+                <div class="col-slide">
+                    <h4 class="feature-heading"><strong>Attendance analytics</strong></h4>
+                    <p class="features-text">When approving or rejecting a leave, see how many leaves this student has already taken so far and decide accordingly.</p>
+                    <img src="../image/attendance-analytics-res.png" alt="Attendance analytics" />
+                </div>
+                <div class="col-slide">
+                    <h4 class="feature-heading"><strong>Parent Notifications</strong></h4>
+                    <p class="features-text">Automatic app notifications or SMS can be sent to parents if their child is marked Absent, On-leave etc. </p>
+                    <img src="../image/parent-notifications-res.png" alt="Parent Notifications" />
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <hr />
+        <br />
+        <br />
+        <div class="row">
+            <div class="col-sm-4 text-center">
+                <i class="icon-fms-features" aria-hidden="true"><img src="../image/time-saving.png" alt="Time Saving" /></i>
+                <h3>Time Saving</h3>
+                <p>No need to manually compile attendance across students or classes. All reporting is automatic.</p>
+            </div>
+            <div class="col-sm-4 text-center">
+                <i class="icon-fms-features" aria-hidden="true"><img src="../image/save-and-edit-later.png" alt="Save and Edit Later" /></i>
+                <h3>Save and Edit Later</h3>
+                <p>Take attendance and edit later on as needed until you publish the attendance.</p>
+            </div>
+            <div class="col-sm-4 text-center">
+                <i class="icon-fms-features" aria-hidden="true"><img src="../image/daily-record-on-parent-app.png" alt="Daily record on parent app" /></i>
+                <h3>Daily record on parent app</h3>
+                <p>Parents can access daily attendance record or a monthly calendar view of attendance.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-sm-4 text-center">
+                <i class="icon-fms-features" aria-hidden="true"><img src="../image/role-based-access.png" alt="Role-based access" /></i>
+                <h3>Role-based Access</h3>
+                <p>Only specified teachers can take attendance for their classes.</p>
+            </div>
+            <div class="col-sm-4 text-center">
+                <i class="icon-fms-features" aria-hidden="true"><img src="../image/real-time-analytics.png" alt="real-time analytics" /></i>
+                <h3>Real-time Analytics</h3>
+                <p>Get access to real-time attendance status, absence and leave information.</p>
+            </div>
+
+            <div class="col-sm-4 text-center">
+                <i class="icon-fms-features" aria-hidden="true"><img src="../image/reduce-delays.png" alt="Reduce Delays" /></i>
+                <h3>Reduce Delays</h3>
+                <p>Reduce delay in attendance process by providing attendance on app facility.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-sm-4 text-center">
+                <i class="icon-fms-features" aria-hidden="true"><img src="../image/errorfree.png" alt="Error-free" /></i>
+                <h3>Error-free</h3>
+                <p>Attendance process becomes error-free as there is minimum manual intervention.</p>
+            </div>
+            <div class="col-sm-4 text-center">
+                <i class="icon-fms-features" aria-hidden="true"><img src="../image/single-multiple-attendance.png" alt="Single Multiple attendance" /></i>
+                <h3>Single/Multiple attendance</h3>
+                <p>Take attendance once a day or in every lecture as per your needs.</p>
+            </div>
+            <div class="col-sm-4 text-center">
+                <i class="icon-fms-features" aria-hidden="true"><img src="../image/secure.png" alt="Secure &amp; Safe" /></i>
+                <h3>Secure &amp; Safe</h3>
+                <p>Secure encryption technology and highly secure data centers keep your data always safe.</p>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</section>
+
+<div class="clearfix"></div>
+
+
+<section class="gps-howitworks-panel text-center">
+    <h2 class="title-webpanel">How it works</h2>
+    <!--<h1 id="p_form_H">How it works? <span>Morning</span></h1>-->
+
+    <div class="container-two">
+        <div class="container">
+
+            <div class="cols text-center">
+                <img class="img-circle img-responsive img-center" src="../image/parents-can-apply-for-leave.png" alt="Parents can apply for leave" />
+                <h3>Parents can apply for leave</h3>
+            </div>
+
+            <div class="cols2 cols-top-margin hidden-lg visible-sm hidden-md visible-xs">
+                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+            </div>
+
+            <div class="cols2 visible-lg hidden-sm visible-md hidden-xs">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </div>
+
+            <div class="cols text-center">
+                <img class="img-circle img-responsive img-center" src="../image/leave-approval-by-admin.png" alt="Leave approval by admin" />
+                <h3>Leave approval by admin</h3>
+            </div>
+
+            <div class="cols2 cols-top-margin hidden-lg visible-sm hidden-md visible-xs">
+                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+            </div>
+
+            <div class="cols2 cols2-res visible-lg hidden-sm visible-md hidden-xs">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </div>
+
+            <div class="cols text-center">
+                <img class="img-circle img-responsive img-center" src="../image/teacher-takes-attendance.png" alt="Teacher takes attendance" />
+                <h3>Teacher takes attendance</h3>
+            </div>
+
+            <div class="cols2 cols-top-margin hidden-lg visible-sm hidden-md visible-xs">
+                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+            </div>
+
+            <div class="cols2 cols-top-margin visible-lg hidden-sm visible-md hidden-xs">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </div>
+
+            <div class="cols text-center">
+                <img class="img-circle img-responsive img-center" src="../image/notification-to-parents-on-app.png" alt="Notification to parents on app" />
+                <h3>Notification to parents on app</h3>
+            </div>
+
+            <div class="cols2 cols-top-margin hidden-lg visible-sm hidden-md visible-xs">
+                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+            </div>
+
+            <div class="cols2 cols-top-margin visible-lg hidden-sm visible-md hidden-xs">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </div>
+
+            <div class="cols text-center">
+                <img class="img-circle img-responsive img-center" src="../image/reports-for-school-admin.png" alt="Reports for school admin" />
+                <h3>Reports for school admin</h3>
+            </div>
+
+
+        </div>
+    </div>
+
+
+</section>
+
+
+<div class="clearfix"></div>
+
+<!--<section id="how-toapply-banner">
+<div class="container">
+<h2 class="banner-heading text-center" style="margin:0 0 20px!important"><strong>How to apply</strong></h2>
+<div class="how-toapply-banner"></div>
+<div class="clearfix"></div>
+<article class="apply-content">
+<p>If you are an existing myly customer, please login to your account and click on Fees section to register for Fees Management or fill in the form below.</p>
+<p>If you are NOT a myly customer yet, please fill in the form below to download a copy of the brochure.</p>
+</article>
+</div>
+<!--</section>-->
+
+<div class="clearfix"></div>
+<section id="brocher-info" data-id="pform">
+    <div class="container">
+        <div class="col-sm-12">
+            <br />
+        </div>
+        <div class="col-sm-6">
+            <div class="brocher-form">
+                <form id="formMobileAppBrochure" action="">
+                    <p>
+                        <article><strong style="color:#5a9bd3">Please fill up the form to download the brochure</strong></article>
+                    </p>
+                    <div class="brocher-item">
+                        <input class="form-control referring-box referring-fm" data-prompt-position="bottomLeft" maxlength="100" data-validation-engine="validate[required,custom[onlyLetterSp],maxSize[100]]" data-errormessage-value-missing="Name is required!" data-errormessage-custom-error="Enter valid name only!" id="name" name="name" placeholder="Name" />
+                    </div>
+                    <div class="brocher-item">
+                        <input class="form-control referring-box referring-fm" data-prompt-position="bottomLeft" maxlength="100" data-validation-engine="validate[required,maxSize[100]]" data-errormessage-value-missing="School name is required!" id="schoolname" name="schoolname" placeholder="School name" />
+                    </div>
+                    <div class="brocher-item">
+                        <input class="form-control referring-box referring-fm" data-prompt-position="bottomLeft" maxlength="30" data-validation-engine="validate[required,custom[onlyLetterSp],maxSize[30]]" data-errormessage-value-missing="City is required!" data-errormessage-custom-error="Enter valid city only!" id="city" name="city" placeholder="City" />
+                    </div>
+                    <div class="brocher-item">
+                        <input maxlength="15" class="form-control referring-box referring-fm" data-prompt-position="bottomLeft" maxlength="15" data-validation-engine="validate[required,funcCall[validateMobile]]" autocomplete="off" onpaste="ReplaceCharsOnPaste(this)" oninput="javascript: ReplaceChars(this);" data-errormessage-value-missing="Mobile number is required!" id="number" placeholder="Mobile" />
+                    </div>
+                    <div class="brocher-item">
+                        <input class="form-control referring-box referring-fm" data-validation-engine="validate[required,custom[email],maxSize[50]]" data-errormessage-value-missing="Email is required!" data-errormessage-custom-error="Let me give you a hint: someone@nowhere.com" id="email" placeholder="Email ID" />
+                    </div>
+                   
+                    <div class="brocher-item">
+                        <select class="form-control referring-box referring-fm" id="enquirer" data-prompt-position="bottomLeft" data-validation-engine="validate[required]" data-errormessage-value-missing="Your role is required!" style="color: #999 !important;">
+                            <option value="" disabled="disabled" selected="selected">Your role in school</option>
+                            <option value="School Owner">School Owner</option>
+                            <option value="Principal">Principal</option>
+                            <option value="Teacher">Teacher</option>
+                            <option value="Parent">Parent</option>
+                            <option value="Student">Student</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <p style="font-size:10px; text-align:left;">By submitting this form, you allow us to contact you for myly services.</p>
+                    <button id="submitMobileAppBrochure" class="-options -secondary -less-padding font-incress">I am interested</button>
+                    <a href="#" target="_blank" id="downloadFileLink" download=download></a>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-6 col-clear">
+            <div class="fms-mobile-screen"><img src="../image/fms-screen.png" alt="fms screen" /></div>
+        </div>
+    </div>
+</section>
+{{ partial "footer.html" . }}
+</div>
+<!--</footer>
+</div>-->
+
+
+<script type="text/javascript">
+function callFmsLeftArrow() {
+    //alert('left');
+    $(".tech-slide-panal").slick("slickPrev");
+}
+function callFmsRightArrow() {
+    //alert('right');
+    $(".tech-slide-panal").slick("slickNext");
+}
+</script>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+<script type="text/javascript">
+$(".swiper-wrapper2").slick({ slidesToShow: 4, slidesToScroll: 4, arrows: false, fade: false, infinite: true, dots: true, autoplay: true, responsive: [{ breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 3, infinite: true, dots: true } }, { breakpoint: 600, settings: { slidesToShow: 2, slidesToScroll: 2 } }, { breakpoint: 800, settings: { slidesToShow: 2, slidesToScroll: 2 } }, { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } }] });
+$(".tech-slide-panal").slick({ asNavFor: ".tech-slide-panal-right", autoplaySpeed: 4500, slidesToShow: 1, slidesToScroll: 1, arrows: false, autoplay: true, infinite: true, centerMode: true, variableWidth: true, responsive: [{ breakpoint: 1024, settings: { slidesToShow: 1, slidesToScroll: 1, infinite: true, dots: false } }, { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } }, { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } }] });
+//$(".tech-slide-panal-right").slick({ slidesToShow: 1, slidesToScroll: 1, arrows: false, autoplay: false, infinite: true, centerMode: true, variableWidth: true, responsive: [{ breakpoint: 1024, settings: { slidesToShow: 1, slidesToScroll: 1, infinite: true, dots: false } }, { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } }, { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } }] });
+$(".tech-slide-panal-right").slick({ variableWidth: false, autoplaySpeed: 4500, asNavFor: ".tech-slide-panal", slidesToShow: 1, slidesToScroll: 1, arrows: false, autoplay: true, infinite: true, centerMode: false, responsive: [{ breakpoint: 1024, settings: { slidesToShow: 1, slidesToScroll: 1, infinite: true, dots: false } }, { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } }, { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } }] });
+$(".slideImages").slick({ slidesToShow: 1, slidesToScroll: 1, arrows: false, autoplay: true, infinite: true, autoplaySpeed: 6000, responsive: [{ breakpoint: 1024, settings: { slidesToShow: 1, slidesToScroll: 1, infinite: true, dots: false } }, { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } }, { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } }] });
+// $('.tech-slide-panal').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+//     var elSlide = $(slick.$slides[currentSlide]);
+//     var dataIndex = elSlide.data('index');
+//     var slider = $('.tech-slide-panal-right');
+//     slider[0].slick.slickGoTo(parseInt(dataIndex));
+// });
+</script>
+
+<script type="text/javascript" src="../js/wow.js"></script>
+<script type="text/javascript" src="../js/tutorial.js"></script>
+<script type='text/javascript' src='../js/nav.js?ver=1.14'></script>
+<script type="text/javascript"> window._mfq = window._mfq || []; (function () { var mf = document.createElement("script"); mf.type = "text/javascript"; mf.async = true; mf.src = "//cdn.mouseflow.com/projects/dc4c6f71-6939-4fae-92c2-4a4e2d630461.js"; document.getElementsByTagName("head")[0].appendChild(mf); })();    </script>
+<!--<script type="text/javascript">
+
+var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq ||
+
+{ widgetcode: "f18f38b820b92ba6903f5c6792a8f270bbfcfeb016580c586990eb30af803081", values: {}, ready: function () { } };
+
+var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true;
+
+s.src = "https://salesiq.zoho.com/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t); d.write("<div id='zsiqwidget'></div>");
+
+</script>-->
+</body>
+</html>

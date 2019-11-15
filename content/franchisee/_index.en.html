@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="en-US">
+<head>
+{{ partial "header.html" . }}
+<script type="application/ld+json">
+    {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Fees Management",
+    "description": "myly is a school fees management software that helps plan, publish, send reminders and collect all fees on a single platform.",
+    "brand": {
+    "@type": "Thing",
+    "name": "Myly"
+    }
+    }
+</script>
+
+<script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement":
+    [
+    {
+    "@type": "ListItem",
+    "position": 1,
+    "item":
+    {
+    "@id": "https://www.mylyapp.com/ ",
+    "name": "Home"
+    }
+    },
+    {
+    "@type": "ListItem",
+    "position": 2,
+    "item":
+    {
+    "@id": "https://www.mylyapp.com/fees/",
+    "name": "Fees-management"
+    }
+    }
+    ]
+    }
+</script>
+</head>
+<style type="text/css">
+p {
+    text-align: center;
+}
+
+body {
+    text-align: center;
+}
+</style>
+
+
+<body>
+    <div id="wrapper">
+        {{ partial "navigation.html" . }}
+     <!--<div class="fees-banner"></div>-->
+     <div class="hero-panel"><img src="/image/hero-fees.jpg" alt="Fees" /></div>
+     <section id="fms-panel">
+         <div class="container">
+             <div class="clearfix"></div>
+             <div class="col-sm-12">
+                 <div class="introduction-panel">
+                     <article>
+                         <h1 class="text-center" style="color:#000;"><strong>School Franchise Management Solution</strong></h1>
+                         <p>myly provides the complete solution for you to manage your chain of schools or franchisees from one place.</p>
+                         <p style="margin:0 0 18px">Integrated with the myly school management app, myly Franchise Management is the only tool you will ever need to manage your school franchise operations. Whether you want to control which branches will have which classes and courses or the fees for every different branch, you have it all in one single school franchise management system. Centralized reporting of all branches on one click keeps you in complete control.</p>
+                     </article>
+                     <div style="margin:auto; display:table;"><button class="-options -secondary -less-padding font-incress rtpf">Download brochure</button></div>
+                 </div>
+
+             </div>
+     </section>
+
+     <div class="clearfix"></div>
+     <section id="fms-features">
+         <div class="container">
+             <h2 class="banner-heading text-center"> <strong>Features &amp; Benefits</strong> </h2>
+             <div class="arrow-fms-left col-sm-1 hidden-xs visible-sm visible-md visible-lg" onclick="callFmsLeftArrow()"><i class="fa fa-angle-left" style="cursor:pointer" aria-hidden="true"></i></div>
+             <div class="col-xs-12 col-sm-10 col-md-5 hidden-xs visible-sm visible-md visible-lg">
+                 <div class="iph-mobile right-align tofade animated fadeInUp">
+                     <p>
+                         <img alt="hand-iphone" src="/image/webpanel-three.png" class="alignnone" />
+                         <div id="mobile" class="mobile lapi-fms">
+                             <div class="tech-slide-panal">
+                                 <div data-index="1"> <img class="zoomIt fees-slide-mgmt" id="zoom_02" src="/image/franchisee1.jpg" alt="Fees Scheduling" /> </div>
+                                 <div data-index="2"> <img class="zoomIt fees-slide-mgmt" id="zoom_02" src="/image/franchisee2.jpg" alt="New Admission" /> </div>
+                                 <div data-index="3"> <img class="zoomIt fees-slide-mgmt" id="zoom_02" src="/image/franchisee3.jpg" alt="Receipt Generation" /> </div>
+                                 <div data-index="4"> <img class="zoomIt fees-slide-mgmt" id="zoom_02" src="/image/franchisee4.jpg" alt="Fees Reconcilation" /> </div>
+                                 <div data-index="5"> <img class="zoomIt fees-slide-mgmt" id="zoom_02" src="/image/franchisee5.jpg" alt="Reports &amp; Analytics" /> </div>
+                                 <div data-index="6"> <img class="zoomIt fees-slide-mgmt" id="zoom_02" src="/image/franchisee6.jpg" alt="Offline Fees Collection" /> </div>
+                             </div>
+                         </div>
+                     </p>
+                 </div>
+             </div>
+             <div class="col-sm-1 hidden-xs visible-sm hidden-md hidden-lg">
+                 <div class="arrow-fms-right" onclick="callFmsRightArrow()"><i class="fa fa-angle-right" style="cursor:pointer" aria-hidden="true"></i></div>
+             </div>
+             <div class="col-xs-12 col-sm-12 col-md-5 hidden-xs visible-sm visible-md visible-lg">
+                 <div class="iph-mobile right-fmsalign tofade animated fadeInUp tech-slide-panal-right">
+                     <div class="col-slide" data-id="1">
+                         <h4 class="feature-heading"><strong>Control classes & Courses</strong></h4>
+                         <p class="features-text">Control classes and courses for each branch or Franchisee location</p>
+                     </div>
+                     <div class="col-slide" data-id="2">
+                         <h4 class="feature-heading"><strong>Control Fees Amount</strong></h4>
+                         <p class="features-text">Control class and course-wise fees for each branch or Franchisee location</p>
+                     </div>
+                     <div class="col-slide" data-id="3">
+                         <h4 class="feature-heading"><strong>Centralized Reporting</strong></h4>
+                         <p class="features-text">View student, courses and fees data of all branches from one place</p>
+                     </div>
+                     <div class="col-slide" data-id="4">
+                         <h4 class="feature-heading"><strong>Centralized Communication</strong></h4>
+                         <p class="features-text">As brand owner, you can communicate to all parents and staff across all branches </p>
+                     </div>
+                     <div class="col-slide" data-id="5">
+                         <h4 class="feature-heading"><strong>Royalty Management</strong></h4>
+                         <p class="features-text">Calculate royalty on different types of fees for timely collection</p>
+                     </div>
+                     <div class="col-slide" data-id="6">
+                         <h4 class="feature-heading"><strong>Automatic Royalty Deduction</strong></h4>
+                         <p class="features-text">Online Fees payment by any parent to any branch can be setup so your royalty is sent to your account automatically</p>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-sm-1 hidden-xs hidden-sm visible-md visible-lg">
+                 <div class="arrow-fms-right" onclick="callFmsRightArrow()"><i class="fa fa-angle-right" style="cursor:pointer" aria-hidden="true"></i></div>
+             </div>
+             <div class="col-xs-12 col-sm-12 col-md-5 hidden-md hidden-lg hidden-sm visible-xs">
+                 <div class="iph-mobile right-fmsalign tofade animated fadeInUp tech-slide-panal-res">
+                     <div class="col-slide">
+                         <h4 class="feature-heading"><strong>>Control classes & Courses</strong></h4>
+                         <p class="features-text">Control classes and courses for each branch or Franchisee location</p>
+                         <img src="/image/Fees-Scheduling-res.jpg" alt="myly is for parent teacher student messaging" />
+                     </div>
+                     <div class="col-slide">
+                         <h4 class="feature-heading"><strong>Control Fees Amount</strong></h4>
+                         <p class="features-text">Control class and course-wise fees for each branch or Franchisee location</p>
+                         <img src="/image/New-Admission-res.jpg" alt="myly student attendance management software" />
+                     </div>
+                     <div class="col-slide">
+                         <h4 class="feature-heading"><strong>Centralized Reporting</strong></h4>
+                         <p class="features-text">View student, courses and fees data of all branches from one place</p>
+                         <img src="/image/Receipt-Generation-res.jpg" alt="download myly for institute event management" />
+                     </div>
+                     <div class="col-slide">
+                         <h4 class="feature-heading"><strong>Centralized Communication</strong></h4>
+                         <p class="features-text">As brand owner, you can communicate to all parents and staff across all branches</p>
+                         <img src="/image/Fees-Reconcilation-res.jpg" alt="myly is for parent teacher student messaging" />
+                     </div>
+                     <div class="col-slide">
+                         <h4 class="feature-heading"><strong>Royalty Management</strong></h4>
+                         <p class="features-text">Calculate royalty on different types of fees for timely collection</p>
+                         <img src="/image/Reports-&-Analytics-res.jpg" alt="myly student attendance management software" />
+                     </div>
+                     <div class="col-slide">
+                         <h4 class="feature-heading"><strong>Automatic Royalty Deduction</strong></h4>
+                         <p class="features-text">Online Fees payment by any parent to any branch can be setup so your royalty is sent to your account automatically</p>
+                         <img src="/image/Offline-Fees-Collection-res.jpg" alt="download myly for institute event management" />
+                     </div>
+                 </div>
+             </div>
+             <div class="clearfix"></div>
+             <hr />
+             <br />
+             <br />
+             <div class="row">
+                 <div class="col-sm-4 text-center">
+                     <i class="icon-fms-features" aria-hidden="true"><img src="/image/reminders.jpg" alt="Automatic Reminders" /></i>
+                     <h3>Control on Data</h3>
+                     <p>Franchisees can no longer reoprt incorrect data as you have complete access</p>
+                 </div>
+                 <div class="col-sm-4 text-center">
+                     <i class="icon-fms-features" aria-hidden="true"><img src="/image/payment.jpg" alt="Partial/Advance Fees" /></i>
+                     <h3>Fees collection visibility</h3>
+                     <p>Get real-time visibility into fees collection of each franchisee and branch</p>
+                 </div>
+                 <div class="col-sm-4 text-center">
+                     <i class="icon-fms-features" aria-hidden="true"><img src="/image/payment.png" alt="online fees collection" /></i>
+                     <h3>Online Fees Collection</h3>
+                     <p>Enable online fees collection in a centralized manner for all your franchisees and branches</p>
+                 </div>
+             </div>
+             <br>
+             <br>
+             <div class="row">
+                 <div class="col-sm-4 text-center">
+                     <i class="icon-fms-features" aria-hidden="true"><img src="/image/finance-manager.jpg" alt="Role-based access" /></i>
+                     <h3>Control Penalties & Waivers</h3>
+                     <p>Allow specific penalties and waivers across all branches to keep uniformity in the system</p>
+                 </div>
+                 <div class="col-sm-4 text-center">
+                     <i class="icon-fms-features" aria-hidden="true"><img src="/image/analytics.jpg" alt="real-time analytics" /></i>
+                     <h3>Real-time Analytics</h3>
+                     <p>Get access to real-time fees due, fees paid and payment mode reports &amp; analytics.</p>
+                 </div>
+
+                 <div class="col-sm-4 text-center">
+                     <i class="icon-fms-features" aria-hidden="true"><img src="/image/fees-collection.jpg" alt="Reduce Delays" /></i>
+                     <h3>Reduce Delays</h3>
+                     <p>Reduce delay in fees collection by providing anytime anywhere fees payment facility.</p>
+                 </div>
+             </div>
+             <br>
+             <br>
+             <div class="row">
+                 <div class="col-sm-4 text-center">
+                     <i class="icon-fms-features" aria-hidden="true"><img src="/image/errorfree.png" alt="Error-free" /></i>
+                     <h3>Error-free</h3>
+                     <p>System becomes error-free as there is minimum manual intervention.</p>
+                 </div>
+                 <div class="col-sm-4 text-center">
+                     <i class="icon-fms-features" aria-hidden="true"><img src="/image/time.png" alt="Save Time" /></i>
+                     <h3>Save Time</h3>
+                     <p>Automatic calculation of royalty amounts ensures you don't have to spend time in manual reconciliation</p>
+                 </div>
+                 <div class="col-sm-4 text-center">
+                     <i class="icon-fms-features" aria-hidden="true"><img src="/image/secure.png" alt="Secure &amp; Safe" /></i>
+                     <h3>Secure &amp; Safe</h3>
+                     <p>Secure encryption technology and highly secure data centers always keep all your data safe.</p>
+                 </div>
+             </div>
+             <div class="clearfix"></div>
+         </div>
+     </section>
+
+     <div class="clearfix"></div>
+
+
+     <section class="gps-howitworks-panel text-center">
+         <h2 class="title-webpanel">How it works</h2>
+         <!--<h1 id="p_form_H">How it works? <span>Morning</span></h1>-->
+
+         <div class="container-two">
+             <div class="container">
+
+                 <div class="cols cols-fees text-center">
+                     <img class="img-circle img-responsive img-center" src="/image/school-schedules-fees.jpg" alt="School Schedules Fees" />
+                     <h3>Create branches</h3>
+                 </div>
+
+                 <div class="cols2 cols-top-margin hidden-lg visible-sm hidden-md visible-xs">
+                     <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                 </div>
+
+                 <div class="cols2 visible-lg hidden-sm visible-md hidden-xs">
+                     <i class="fa fa-arrow-right fa-arrow-top" aria-hidden="true"></i>
+                 </div>
+
+                 <div class="cols cols-fees text-center">
+                     <img class="img-circle img-responsive img-center" src="/image/fees-reminder.jpg" alt="Automated fees reminder sent to Parents" />
+                     <h3>Assign classes, courses & fees</h3>
+                 </div>
+
+                 <div class="cols2 cols-top-margin hidden-lg visible-sm hidden-md visible-xs">
+                     <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                 </div>
+
+                 <div class="cols2 cols2-res visible-lg hidden-sm visible-md hidden-xs">
+                     <i class="fa fa-arrow-right fa-arrow-top" aria-hidden="true"></i>
+                 </div>
+
+                 <div class="cols cols-fees text-center">
+                     <img class="img-circle img-responsive img-center" src="/image/parents-pay-online.jpg" alt="Parents pay from app or physically" />
+                     <h3>Franchisees manage their branches</h3>
+                 </div>
+
+                 <div class="cols2 cols-top-margin hidden-lg visible-sm hidden-md visible-xs">
+                     <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                 </div>
+
+                 <div class="cols2 cols-top-margin visible-lg hidden-sm visible-md hidden-xs">
+                     <i class="fa fa-arrow-right fa-arrow-top" aria-hidden="true"></i>
+                 </div>
+
+                 <div class="cols cols-fees-res text-center">
+                     <img class="img-circle img-responsive img-center" src="/image/bank-building.jpg" alt="Fees directly deposited in school’s bank account" />
+                     <h3>Automatic calculation of Royalty</h3>
+                 </div>
+
+                 <div class="cols2 cols-top-margin hidden-lg visible-sm hidden-md visible-xs">
+                     <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                 </div>
+
+                 <div class="cols2 cols-top-margin visible-lg hidden-sm visible-md hidden-xs">
+                     <i class="fa fa-arrow-right fa-arrow-top" aria-hidden="true"></i>
+                 </div>
+
+                 <div class="cols cols-fees-res text-center">
+                     <img class="img-circle img-responsive img-center" src="/image/printed-receipt.jpg" alt="Parents get printed receipt or email" />
+                     <h3>You can monitor all required data</h3>
+                 </div>
+
+
+             </div>
+         </div>
+
+
+     </section>
+
+
+     <div class="clearfix"></div>
+
+     <!--<section id="how-toapply-banner">
+     <div class="container">
+     <h2 class="banner-heading text-center" style="margin:0 0 20px!important"><strong>How to apply</strong></h2>
+     <div class="how-toapply-banner"></div>
+     <div class="clearfix"></div>
+     <article class="apply-content">
+     <p>If you are an existing myly customer, please login to your account and click on Fees section to register for Fees Management or fill in the form below.</p>
+     <p>If you are NOT a myly customer yet, please fill in the form below to download a copy of the brochure.</p>
+     </article>
+     </div>
+     <!--</section>-->
+
+     <div class="clearfix"></div>
+     <section id="brocher-info" data-id="pform">
+         <div class="container">
+             <div class="col-sm-12">
+                 <br />
+             </div>
+             <div class="col-sm-6">
+                 <div class="brocher-form">
+                     <form id="formMobileAppBrochure" action="">
+                         <p>
+                             <article><strong style="color:#5a9bd3">Please fill up the form to download the brochure</strong></article>
+                         </p>
+                         <div class="brocher-item">
+                             <input class="form-control referring-box referring-fm" data-prompt-position="bottomLeft" maxlength="100" data-validation-engine="validate[required,custom[onlyLetterSp],maxSize[100]]" data-errormessage-value-missing="Name is required!" data-errormessage-custom-error="Enter valid name only!" id="name" name="name" placeholder="Name" />
+                         </div>
+                         <div class="brocher-item">
+                             <input class="form-control referring-box referring-fm" data-prompt-position="bottomLeft" maxlength="100" data-validation-engine="validate[required,maxSize[100]]" data-errormessage-value-missing="School name is required!" id="schoolname" name="schoolname" placeholder="School name" />
+                         </div>
+                         <div class="brocher-item">
+                             <input class="form-control referring-box referring-fm" data-prompt-position="bottomLeft" maxlength="30" data-validation-engine="validate[required,custom[onlyLetterSp],maxSize[30]]" data-errormessage-value-missing="City is required!" data-errormessage-custom-error="Enter valid city only!" id="city" name="city" placeholder="City" />
+                         </div>
+                         <div class="brocher-item">
+                             <input maxlength="15" class="form-control referring-box referring-fm" data-prompt-position="bottomLeft" maxlength="15" data-validation-engine="validate[required,funcCall[validateMobile]]" autocomplete="off" onpaste="ReplaceCharsOnPaste(this)" oninput="javascript: ReplaceChars(this);" data-errormessage-value-missing="Mobile number is required!" id="number" placeholder="Mobile" />
+                         </div>
+                         
+                         <div class="brocher-item">
+                             <input class="form-control referring-box referring-fm" data-validation-engine="validate[required,custom[email],maxSize[50]]" data-errormessage-value-missing="Email is required!" data-errormessage-custom-error="Let me give you a hint: someone@nowhere.com" id="email" placeholder="Email ID" />
+                         </div>
+                         <div class="brocher-item">
+                             <select class="form-control referring-box referring-fm" id="enquirer" data-prompt-position="bottomLeft" data-validation-engine="validate[required]" data-errormessage-value-missing="Your role is required!" style="color: #999 !important;">
+                                 <option value="" disabled="disabled" selected="selected">Your role in school</option>
+                                 <option value="School Owner">School Owner</option>
+                                 <option value="Principal">Principal</option>
+                                 <option value="Teacher">Teacher</option>
+                                 <option value="Parent">Parent</option>
+                                 <option value="Student">Student</option>
+                                 <option value="Other">Other</option>
+                             </select>
+                         </div>
+                         <p style="font-size:10px; text-align:left;">By submitting this form, you allow us to contact you for myly services.</p>
+                         <button id="submitMobileAppBrochure" class="-options -secondary -less-padding font-incress">I am interested</button>
+                         <a href="#" target="_blank" id="downloadFileLink" download=download></a>
+                     </form>
+                 </div>
+             </div>
+             <div class="col-sm-6 col-clear">
+                 <div class="fms-mobile-screen"><img src="/image/fms-screen.png" alt="fms screen" /></div>
+             </div>
+         </div>
+     </section>
+     {{ partial "footer.html" . }}
+ </div>
+
+
+ <script type="text/javascript">
+     function callFmsLeftArrow() {
+         //alert('left');
+         $(".tech-slide-panal").slick("slickPrev");
+     }
+     function callFmsRightArrow() {
+         //alert('right');
+         $(".tech-slide-panal").slick("slickNext");
+     }
+ </script>
+ <script type="text/javascript" src="/js/slick.min.js"></script>
+ <script type="text/javascript">
+     $(".swiper-wrapper2").slick({ slidesToShow: 4, slidesToScroll: 4, arrows: false, fade: false, infinite: true, dots: true, autoplay: true, responsive: [{ breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 3, infinite: true, dots: true } }, { breakpoint: 600, settings: { slidesToShow: 2, slidesToScroll: 2 } }, { breakpoint: 800, settings: { slidesToShow: 2, slidesToScroll: 2 } }, { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } }] });
+     $(".tech-slide-panal").slick({ asNavFor: ".tech-slide-panal-right", autoplaySpeed: 4500, slidesToShow: 1, slidesToScroll: 1, arrows: false, autoplay: true, infinite: true, centerMode: true, variableWidth: true, responsive: [{ breakpoint: 1024, settings: { slidesToShow: 1, slidesToScroll: 1, infinite: true, dots: false } }, { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } }, { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } }] });
+     //$(".tech-slide-panal-right").slick({ slidesToShow: 1, slidesToScroll: 1, arrows: false, autoplay: false, infinite: true, centerMode: true, variableWidth: true, responsive: [{ breakpoint: 1024, settings: { slidesToShow: 1, slidesToScroll: 1, infinite: true, dots: false } }, { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } }, { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } }] });
+     $(".tech-slide-panal-right").slick({ variableWidth: false, autoplaySpeed: 4500, asNavFor: ".tech-slide-panal", slidesToShow: 1, slidesToScroll: 1, arrows: false, autoplay: true, infinite: true, centerMode: false, responsive: [{ breakpoint: 1024, settings: { slidesToShow: 1, slidesToScroll: 1, infinite: true, dots: false } }, { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } }, { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } }] });
+     $(".slideImages").slick({ slidesToShow: 1, slidesToScroll: 1, arrows: false, autoplay: true, infinite: true, autoplaySpeed: 6000, responsive: [{ breakpoint: 1024, settings: { slidesToShow: 1, slidesToScroll: 1, infinite: true, dots: false } }, { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } }, { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } }] });
+     // $('.tech-slide-panal').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+     //     var elSlide = $(slick.$slides[currentSlide]);
+     //     var dataIndex = elSlide.data('index');
+     //     var slider = $('.tech-slide-panal-right');
+     //     slider[0].slick.slickGoTo(parseInt(dataIndex));
+     // });
+ </script>
+
+ <script type="text/javascript" src="/js/wow.js"></script>
+ <script type="text/javascript" src="/js/tutorial.js"></script>
+ <script type='text/javascript' src='/js/nav.js?ver=1.14'></script>
+ <script type="text/javascript"> window._mfq = window._mfq || []; (function () { var mf = document.createElement("script"); mf.type = "text/javascript"; mf.async = true; mf.src = "//cdn.mouseflow.com/projects/dc4c6f71-6939-4fae-92c2-4a4e2d630461.js"; document.getElementsByTagName("head")[0].appendChild(mf); })();    </script>
+ <!--<script type="text/javascript">
+
+     var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq ||
+
+     { widgetcode: "f18f38b820b92ba6903f5c6792a8f270bbfcfeb016580c586990eb30af803081", values: {}, ready: function () { } };
+
+     var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true;
+
+     s.src = "https://salesiq.zoho.com/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t); d.write("<div id='zsiqwidget'></div>");
+
+ </script>-->
+</body>
+</html>

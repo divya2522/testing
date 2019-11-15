@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="en-US">
+<head>
+{{ partial "header.html" . }}
+
+<script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement":
+    [
+    {
+    "@type": "ListItem",
+    "position": 1,
+    "item":
+    {
+    "@id": "https://www.mylyapp.com/ ",
+    "name": "Home"
+    }
+    },
+    {
+    "@type": "ListItem",
+    "position": 2,
+    "item":
+    {
+    "@id": "https://www.mylyapp.com/fees/",
+    "name": "Fees-management"
+    }
+    }
+    ]
+    }
+</script>
+</head>
+<style type="text/css">
+p {
+    text-align: center;
+}
+
+body {
+    text-align: center;
+}
+</style>
+
+
+<script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement":
+    [
+    {
+    "@type": "ListItem",
+    "position": 1,
+    "item":
+    {
+    "@id": "https://www.mylyapp.com/ ",
+    "name": "Home"
+    }
+    },
+    {
+    "@type": "ListItem",
+    "position": 2,
+    "item":
+    {
+    "@id": "https://www.mylyapp.com/myly-app-for-parents-and-students/",
+    "name": "app-for-parents-and-students"
+    }
+    }
+    ]
+    }
+</script>
+
+</head>
+<style type="text/css">
+p {
+    text-align: center;
+}
+
+body {
+    text-align: center;
+}
+
+.slick-slide {
+    margin: 0;
+}
+</style>
+<body>
+    <div id="wrapper">
+        {{ partial "navigation.html" . }}
+        <div class="hero-panel" style="text-align:center;"><img src="../image/parent-app-banner.jpg" alt="Parent App Banner" /></div>
+        <section id="fms-panel">
+            <div class="container">
+                <div class="clearfix"></div>
+                <div class="col-sm-12">
+                    <div class="introduction-panel">
+                        <article>
+                            <h1 class="text-center" style="color:#000;"><strong>myly App for Parents & Students</strong></h1>
+                            <p>World-over, research has proven that higher the involvement of parents in child's activities, better is the learning outcome.</p>
+                            <p style="margin:0 0 18px">With myly app, parents now have a one-stop place to look at for all school information. Not only can they get all information in one place, they can make fees payment, apply for leave and even communicate with teachers over the app. myly app provides a secure, child-specific communication and transaction interface, making it the preferred choice of thousands of parents.  </p>
+                        </article>
+                        <div style="margin:auto; display:table;"><button class="-options -secondary -less-padding font-incress rtpf">Download brochure</button></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="clearfix"></div>
+        <section id="fms-features">
+            <div class="container">
+                <h2 class="banner-heading text-center"> <strong>Features & Benefits</strong> </h2>
+                <div class="arrow-fms-left col-sm-1 hidden-xs visible-sm visible-md visible-lg" onclick="callFmsLeftArrow()"><i class="fa fa-angle-left" style="cursor:pointer" aria-hidden="true"></i></div>
+                <div class="col-xs-12 col-sm-10 col-md-4 hidden-xs visible-sm visible-md visible-lg">
+                    <div class="iph-mobile iph-mobile-admin right-align tofade animated fadeInUp">
+                        <p>
+                            <img alt="hand-iphone" src="../image/admin-mobile.png" class="alignnone" />
+                            <div id="mobile" class="mobile lapi-admin">
+                                <div class="tech-slide-panal">
+                                    <div data-index="1"> <img src="../image/admin-mobile-screen-parent.jpg" alt="School messages" /> </div>
+                                    <div data-index="2"> <img src="../image/coursework-parent.jpg" alt="Coursework" /> </div>
+                                    <div data-index="3"> <img src="../image/attendance-parent.jpg" alt="Attendance" /> </div>
+                                    <div data-index="4"> <img src="../image/time-table-parent.jpg" alt="Time-table" /> </div>
+                                    <div data-index="5"> <img src="../image/exam-result-parent.jpg" alt="Exam-Result Updates" /> </div>
+                                    <div data-index="6"> <img src="../image/fees-payment-parent.jpg" alt="Fees Payment from App" /> </div>
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-1 hidden-xs visible-sm hidden-md hidden-lg">
+                    <div class="arrow-fms-right" onclick="callFmsRightArrow()"><i class="fa fa-angle-right" style="cursor:pointer" aria-hidden="true"></i></div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 hidden-xs visible-sm visible-md visible-lg">
+                    <div class="iph-mobile right-fmsalign tofade animated fadeInUp tech-slide-panal-right">
+                        <div class="col-slide" data-id="1">
+                            <h4 class="feature-heading"><strong>School messages</strong></h4>
+                            <p class="features-text">Never miss another message from your school. Get real-time notifications, messages, attachments and images.</p>
+                        </div>
+                        <div class="col-slide" data-id="2">
+                            <h4 class="feature-heading"><strong>Coursework</strong></h4>
+                            <p class="features-text">Get details of home-work and class-work for the day even if the student didn’t go to school.</p>
+                        </div>
+                        <div class="col-slide" data-id="3">
+                            <h4 class="feature-heading"><strong>Attendance</strong></h4>
+                            <p class="features-text">Get real-time attendance notifications about your ward as soon as attendance is published by the school.</p>
+                        </div>
+                        <div class="col-slide" data-id="4">
+                            <h4 class="feature-heading"><strong>Time-table</strong></h4>
+                            <p class="features-text">Real-time updates about daily time-table with timings and teacher names. Bye-by heavy school bags, take only what is needed every-day!</p>
+                        </div>
+                        <div class="col-slide" data-id="5">
+                            <h4 class="feature-heading"><strong>Exam-Result Updates</strong></h4>
+                            <p class="features-text">Don’t be caught unawares! With myly App you can received exam schedules with automated reminders before the exam date. Get results of your ward, along with class average and highest score for full analysis.</p>
+                        </div>
+                        <div class="col-slide" data-id="6">
+                            <h4 class="feature-heading"><strong>Fees Payment from App</strong></h4>
+                            <p class="features-text">No need to stand in long queues to deposit school fees. Pay all school fees, straight from the app. Use your credit card, debit card, net-banking or wallet service. All your receipts will be readily available on the app itself.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1 hidden-xs hidden-sm visible-md visible-lg">
+                    <div class="arrow-fms-right" onclick="callFmsRightArrow()"><i class="fa fa-angle-right" style="cursor:pointer" aria-hidden="true"></i></div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-5 hidden-md hidden-lg hidden-sm visible-xs">
+                    <div class="iph-mobile right-fmsalign tofade animated fadeInUp tech-slide-panal-res">
+                        <div class="col-slide">
+                            <h4 class="feature-heading"><strong>School messages</strong></h4>
+                            <p class="features-text">Never miss another message from your school. Get real-time notifications, messages, attachments and images.</p>
+                            <img src="../image/admin-mobile-screen-res.jpg" alt="School messages" />
+                        </div>
+                        <div class="col-slide">
+                            <h4 class="feature-heading"><strong>Coursework</strong></h4>
+                            <p class="features-text">Get real-time attendance notifications about your ward as soon as attendance is published by the school.</p>
+                            <img src="../image/coursework-res.jpg" alt="Coursework" />
+                        </div>
+                        <div class="col-slide">
+                            <h4 class="feature-heading"><strong>Attendance</strong></h4>
+                            <p class="features-text">Get real-time attendance notifications about your ward as soon as attendance is published by the school.</p>
+                            <img src="../image/attendance-parent-res.jpg" alt="Attendance" />
+                        </div>
+                        <div class="col-slide">
+                            <h4 class="feature-heading"><strong>Time-table</strong></h4>
+                            <p class="features-text">Real-time updates about daily time-table with timings and teacher names. Bye-by heavy school bags, take only what is needed every-day!</p>
+                            <img src="../image/time-table-parent-res.jpg" alt="Time-table" />
+                        </div>
+                        <div class="col-slide">
+                            <h4 class="feature-heading"><strong>Exam-Result Updates</strong></h4>
+                            <p class="features-text">Don’t be caught unawares! With myly App you can received exam schedules with automated reminders before the exam date. Get results of your ward, along with class average and highest score for full analysis.</p>
+                            <img src="../image/exam-result-parent-res.jpg" alt="Exam-Result Updates" />
+                        </div>
+                        <div class="col-slide">
+                            <h4 class="feature-heading"><strong>Fees Payment from App</strong></h4>
+                            <p class="features-text">No need to stand in long queues to deposit school fees. Pay all school fees, straight from the app. Use your credit card, debit card, net-banking or wallet service. All your receipts will be readily available on the app itself.</p>
+                            <img src="../image/fees-payment-from-app-res.jpg" alt="Fees Payment from App" />
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <hr />
+                <br />
+                <br />
+                <div class="row">
+                    <div class="col-sm-4 text-center">
+                        <i class="icon-fms-features" aria-hidden="true"><img src="../image/Academics.jpg" alt="Academics" /></i>
+                        <h3>Academics</h3>
+                        <p> Get complete list of all subjects that your ward studies and the names and email IDs of the teachers that teach those subjects</p>
+                    </div>
+
+                    <div class="col-sm-4 text-center">
+                        <i class="icon-fms-features" aria-hidden="true"><img src="../image/club-house.jpg" alt="Club/House" /></i>
+                        <h3>Club/House</h3>
+                        <p>Get complete information about activities, teams, clubs etc. that your ward is a part of – messages, events and photos</p>
+                    </div>
+
+                    <div class="col-sm-4 text-center">
+                        <i class="icon-fms-features" aria-hidden="true"><img src="../image/newsletter.jpg" alt="Newsletter" /></i>
+                        <h3>Newsletter</h3>
+                        <p>Get the inside information about your ward’s school. Receive detailed newsletters from the school that you can download and view. </p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-sm-4 text-center">
+                        <i class="icon-fms-features" aria-hidden="true"><img src="../image/question.jpg" alt="Quiz" /></i>
+                        <h3>Quiz</h3>
+                        <p>Teachers can share quizzes that students can take on the app. Once completed, get your score and the right answers to improve your knowledge</p>
+                    </div>
+
+                    <div class="col-sm-4 text-center">
+                        <i class="icon-fms-features" aria-hidden="true"><img src="../image/leave.jpg" alt="Apply for leave" /></i>
+                        <h3>Apply for leave</h3>
+                        <p>Have a sick child or traveling out of town? Apply for leave from the app itself. Select dates for leave, reason and even send attachments if needed.</p>
+                    </div>
+
+                    <div class="col-sm-4 text-center">
+                        <i class="icon-fms-features" aria-hidden="true"><img src="../image/compose.jpg" alt="Compose message" /></i>
+                        <h3>Compose message</h3>
+                        <p>Send a message to the teachers who teach your ward. No need to visit the school or wait on phone to speak to the teacher. Connect anytime!</p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-sm-4 text-center">
+                        <i class="icon-fms-features" aria-hidden="true"><img src="../image/request.jpg" alt="Send request" /></i>
+                        <h3>Send request</h3>
+                        <p>Send special requests to the school admin. Submit important documents from the app</p>
+                    </div>
+
+
+                    <div class="col-sm-4 text-center">
+                        <i class="icon-fms-features" aria-hidden="true"><img src="../image/calendar.jpg" alt="Calendar" /></i>
+                        <h3>Calendar</h3>
+                        <p>Complete school calendar on your fingertips with details of all past and upcoming events. </p>
+                    </div>
+
+                    <div class="col-sm-4 text-center">
+                        <i class="icon-fms-features" aria-hidden="true"><img src="../image/gallery.jpg" alt="Image Gallery" /></i>
+                        <h3>Image Gallery</h3>
+                        <p>
+                            Photos of school activities and students' participation in various events of the school
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <div class="clearfix"></div>
+
+
+
+
+        <div class="clearfix"></div>
+        <section id="brocher-info" class="brocher-info" data-id="pform" style="margin: 0; background: #fff; border: none;">
+            <div class="container">
+                <hr />
+                <div class="col-sm-12">
+                    <br />
+                </div>
+                <div class="col-sm-6">
+                    <div class="brocher-form">
+                        <form id="formMobileAppBrochure" action="">
+                            <p>
+                                <article><strong style="color:#5a9bd3">Please fill up the form to download the brochure</strong></article>
+                            </p>
+                            <div class="brocher-item">
+                                <input class="form-control referring-box referring-fm" data-prompt-position="bottomLeft" maxlength="100" data-validation-engine="validate[required,custom[onlyLetterSp],maxSize[100]]" data-errormessage-value-missing="Name is required!" data-errormessage-custom-error="Enter valid name only!" id="name" name="name" placeholder="Name" />
+                            </div>
+                            <div class="brocher-item">
+                                <input class="form-control referring-box referring-fm" data-prompt-position="bottomLeft" maxlength="100" data-validation-engine="validate[required,maxSize[100]]" data-errormessage-value-missing="School name is required!" id="schoolname" name="schoolname" placeholder="School name" />
+                            </div>
+                            <div class="brocher-item">
+                                <input class="form-control referring-box referring-fm" data-prompt-position="bottomLeft" maxlength="30" data-validation-engine="validate[required,custom[onlyLetterSp],maxSize[30]]" data-errormessage-value-missing="City is required!" data-errormessage-custom-error="Enter valid city only!" id="city" name="city" placeholder="City" />
+                            </div>
+                            <div class="brocher-item">
+                                <input maxlength="15" class="form-control referring-box referring-fm" data-prompt-position="bottomLeft" maxlength="15" data-validation-engine="validate[required,funcCall[validateMobile]]" autocomplete="off" onpaste="ReplaceCharsOnPaste(this)" oninput="javascript: ReplaceChars(this);" data-errormessage-value-missing="Mobile number is required!" id="number" placeholder="Mobile" />
+                            </div>
+                            <div class="brocher-item">
+                                <input class="form-control referring-box referring-fm" data-validation-engine="validate[required,custom[email],maxSize[50]]" data-errormessage-value-missing="Email is required!" data-errormessage-custom-error="Let me give you a hint: someone@nowhere.com" id="email" placeholder="Email ID" />
+                            </div>
+                           
+                            <div class="brocher-item">
+                                <select class="form-control referring-box referring-fm" id="enquirer" data-prompt-position="bottomLeft" data-validation-engine="validate[required]" data-errormessage-value-missing="Your role is required!" style="color: #999 !important;">
+                                    <option value="" disabled="disabled" selected="selected">Your role in school</option>
+                                    <option value="School Owner">School Owner</option>
+                                    <option value="Principal">Principal</option>
+                                    <option value="Teacher">Teacher</option>
+                                    <option value="Parent">Parent</option>
+                                    <option value="Student">Student</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <p style="font-size:10px; text-align:left;">By submitting this form, you allow us to contact you for myly services.</p>
+                            <button id="submitMobileAppBrochure" class="-options -secondary -less-padding font-incress">I am interested</button>
+                            <a href="#" target="_blank" id="downloadFileLink" download=download></a>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-clear">
+                    <div class="fms-mobile-screen"><img src="../image/fms-screen.png" alt="fms screen" /></div>
+                </div>
+            </div>
+        </section>
+        {{ partial "footer.html" . }}
+
+       
+    </div>
+    
+    
+
+    <script type="text/javascript">
+        function callFmsLeftArrow() {
+            //alert('left');
+            $(".tech-slide-panal").slick("slickPrev");
+        }
+        function callFmsRightArrow() {
+            //alert('right');
+            $(".tech-slide-panal").slick("slickNext");
+        }
+    </script>
+    <script type="text/javascript" src="../js/slick.min.js"></script>
+    <script type="text/javascript">
+        $(".swiper-wrapper2").slick({ slidesToShow: 4, slidesToScroll: 4, arrows: false, fade: false, infinite: true, dots: true, autoplay: true, responsive: [{ breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 3, infinite: true, dots: true } }, { breakpoint: 600, settings: { slidesToShow: 2, slidesToScroll: 2 } }, { breakpoint: 800, settings: { slidesToShow: 2, slidesToScroll: 2 } }, { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } }] });
+        $(".tech-slide-panal").slick({ asNavFor: ".tech-slide-panal-right", autoplaySpeed: 4500, slidesToShow: 1, slidesToScroll: 1, arrows: false, autoplay: true, infinite: true, centerMode: true, variableWidth: true, responsive: [{ breakpoint: 1024, settings: { slidesToShow: 1, slidesToScroll: 1, infinite: true, dots: false } }, { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } }, { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } }] });
+        //$(".tech-slide-panal-right").slick({ slidesToShow: 1, slidesToScroll: 1, arrows: false, autoplay: false, infinite: true, centerMode: true, variableWidth: true, responsive: [{ breakpoint: 1024, settings: { slidesToShow: 1, slidesToScroll: 1, infinite: true, dots: false } }, { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } }, { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } }] });
+        $(".tech-slide-panal-right").slick({ variableWidth: false, autoplaySpeed: 4500, asNavFor: ".tech-slide-panal", slidesToShow: 1, slidesToScroll: 1, arrows: false, autoplay: true, infinite: true, centerMode: false, responsive: [{ breakpoint: 1024, settings: { slidesToShow: 1, slidesToScroll: 1, infinite: true, dots: false } }, { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } }, { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } }] });
+        $(".slideImages").slick({ slidesToShow: 1, slidesToScroll: 1, arrows: false, autoplay: true, infinite: true, autoplaySpeed: 6000, responsive: [{ breakpoint: 1024, settings: { slidesToShow: 1, slidesToScroll: 1, infinite: true, dots: false } }, { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } }, { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } }] });
+        // $('.tech-slide-panal').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        //     var elSlide = $(slick.$slides[currentSlide]);
+        //     var dataIndex = elSlide.data('index');
+        //     var slider = $('.tech-slide-panal-right');
+        //     slider[0].slick.slickGoTo(parseInt(dataIndex));
+        // });
+    </script>
+
+    <script type="text/javascript" src="../js/wow.js"></script>
+    <script type="text/javascript" src="../js/tutorial.js"></script>
+    <script type='text/javascript' src='../js/nav.js'></script>
+    <script type="text/javascript"> window._mfq = window._mfq || []; (function () { var mf = document.createElement("script"); mf.type = "text/javascript"; mf.async = true; mf.src = "//cdn.mouseflow.com/projects/dc4c6f71-6939-4fae-92c2-4a4e2d630461.js"; document.getElementsByTagName("head")[0].appendChild(mf); })();    </script>
+    <!--<script type="text/javascript">
+
+        var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq ||
+
+        { widgetcode: "f18f38b820b92ba6903f5c6792a8f270bbfcfeb016580c586990eb30af803081", values: {}, ready: function () { } };
+
+        var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true;
+
+        s.src = "https://salesiq.zoho.com/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t); d.write("<div id='zsiqwidget'></div>");
+
+    </script>-->
+</body>
+</html>

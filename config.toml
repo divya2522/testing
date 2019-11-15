@@ -73,101 +73,156 @@ disableLanguageSwitchingButton = false
            url="pages"
          
         
-      # Dropdown menu
-      [[Languages.en.menu.main]]
-        weight = 2
-        name = "Solution"
-        url = "solution"
-        hasChildren = true
+  #     # # Dropdown menu
+  #     # [[Languages.en.menu.main]]
+  #     #   weight = 2
+  #     #   name = "Solution"
+  #     #   url = "solution"
+  #     #   hasChildren = true
          
-         # Dropdown menu
-          [[Languages.en.menu.main]]
-          parent = "Solution"
-          name = "School App"
-          url = "solution/schoolapp"
-          weight = 2
-          hasChildren = true
+  #     #    # Dropdown menu
+  #     #     [[Languages.en.menu.main]]
+  #     #     parent = "Solution"
+  #     #     name = "School App"
+  #     #     url = "solution/schoolapp"
+  #     #     weight = 2
+  #     #     hasChildren = true
 
-              [[Languages.en.menu.main]]
-               parent = "School App"
-               name = "For School Staff"
-               url = "solution/schoolapp/forschoolstaff"
-               weight = 2
+  #     #         [[Languages.en.menu.main]]
+  #     #          parent = "School App"
+  #     #          name = "For Parent"
+  #     #          url = "solution/schoolapp/forparent"
+  #     #          weight = 2
 
-               [[Languages.en.menu.main]]
-               parent = "School App"
-               name = "For Parent"
-               url = "solution/schoolapp/forparent"
-               weight = 2
-          
-          # Dropdown menu
-          [[Languages.en.menu.main]]
-          parent = "Solution"
-          name = "Student Security"
-          url = "pages/student_security"
-          weight = 3
-              [[Languages.en.menu.main]]
-               parent = "Student Security"
-               name = "School Bus GPS Tracking"
-               url = "pages/student_security/gps_tracking"
-               weight = 3
+  #     #         [[Languages.en.menu.main]]
+  #     #          parent = "School App"
+  #     #          name = "For School Staff"
+  #     #          url = "solution/schoolapp/forschoolstaff"
+  #     #          weight = 3
+
+               
+
+  #          # Dropdown menu
+  #         [[Languages.en.menu.main]]
+  #         parent = "Solution"
+  #         name = "School Management"
+  #         url = "solution/school_management"
+  #         weight = 3
+  #             [[Languages.en.menu.main]]
+  #              parent = "School Management"
+  #              name = "Admission Management"
+  #              url = "solution/school_management/admission_management"
+  #              weight = 3
+
+  #              [[Languages.en.menu.main]]
+  #              parent = "School Management"
+  #              name = "School Data Management"
+  #              url = "solution/school_management/school_data_management"
+  #              weight = 4
+
+  #              [[Languages.en.menu.main]]
+  #              parent = "School Management"
+  #              name = "Attendance & Leave"
+  #              url = "solution/school_management/attendance_leave"
+  #              weight = 5
+
+  #              [[Languages.en.menu.main]]
+  #              parent = "School Management"
+  #              name = "Fees Management"
+  #              url = "solution/school_management/fees_management"
+  #              weight = 6
+
+  #              [[Languages.en.menu.main]]
+  #              parent = "School Management"
+  #              name = "Exam-Result Management"
+  #              url = "solution/school_management/exam_result_management"
+  #              weight = 7
+
+  #              [[Languages.en.menu.main]]
+  #              parent = "School Management"
+  #              name = "Timetable Management"
+  #              url = "solution/school_management/timetable_management"
+  #              weight = 8
+
+  #              [[Languages.en.menu.main]]
+  #              parent = "School Management"
+  #              name = "Library Management"
+  #              url = "solution/school_management/library_management"
+  #              weight = 9
+
+  #              [[Languages.en.menu.main]]
+  #              parent = "School Management"
+  #              name = "Franchisee Management"
+  #              url = "solution/school_management/franchisee_management"
+  #              weight = 10
+  #         # Dropdown menu
+  #         [[Languages.en.menu.main]]
+  #         parent = "Solution"
+  #         name = "Student Security"
+  #         url = "solution/student_security"
+  #         weight = 4
+  #             [[Languages.en.menu.main]]
+  #              parent = "Student Security"
+  #              name = "School Bus GPS Tracking"
+  #              url = "solution/student_security/gps_tracking"
+  #              weight = 4
                
 
 
 
 
-    # banner
-    [Languages.en.params.banner]
-      title = "Support Center & Knowledge base"
-      description = "Find advice and answers from our support team fast or get in touch"
-      image = "images/banner.jpg"
-      placeholder = "Have a question? Just ask here or enter terms"
+  #   # banner
+  #   [Languages.en.params.banner]
+  #     title = "Support Center & Knowledge base"
+  #     description = "Find advice and answers from our support team fast or get in touch"
+  #     image = "images/banner.jpg"
+  #     placeholder = "Have a question? Just ask here or enter terms"
 
-    # Topics
-    [Languages.en.params.topics]
-      title = "myly for School Owners"
-      title1 = "myly for Parents & Students"
-      title2="myly for Parents & Students"
+  #   # Topics
+  #   [Languages.en.params.topics]
+  #     title = "myly for School Owners"
+  #     title1 = "myly for Parents & Students"
+  #     title2="myly for Parents & Students"
     
-    # call to action
-    [Languages.en.params.cta]
-      enable = true
-      title = "Didn't find an answer to your question?"
-      description = "Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam."
-      btnText = "contact us"
-      btnURL = "contact"
+  #   # call to action
+  #   [Languages.en.params.cta]
+  #     enable = true
+  #     title = "Didn't find an answer to your question?"
+  #     description = "Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam."
+  #     btnText = "contact us"
+  #     btnURL = "contact"
 
-    # contact
-    [Languages.en.params.contact]
-      title = "Got Any Questions"
-      content = "Submit the form and confirm your email address at <a class='text-primary' href='https://formspree.io/'>Formspree</a> Then add the following lines to contact page YAML Front Matter."
+  #   # contact
+  #   [Languages.en.params.contact]
+  #     title = "Got Any Questions"
+  #     content = "Submit the form and confirm your email address at <a class='text-primary' href='https://formspree.io/'>Formspree</a> Then add the following lines to contact page YAML Front Matter."
 
-    # footer social icon
+  #   # footer social icon
     
-    [[Languages.en.socialIcon]]
-       icon = "ti-facebook"
-      linkURL = "https://www.facebook.com/mylyapp"
+  #   [[Languages.en.socialIcon]]
+  #      icon = "ti-facebook"
+  #     linkURL = "https://www.facebook.com/mylyapp"
 
-   [[Languages.en.socialIcon]]
-       icon = "ti-google"
-       linkURL = "https://plus.google.com/+Mylyapp/posts"
+  #  [[Languages.en.socialIcon]]
+  #      icon = "ti-google"
+  #      linkURL = "https://plus.google.com/+Mylyapp/posts"
       
 
-    [[Languages.en.socialIcon]]
-       icon = "ti-twitter-alt"
-      linkURL = "https://twitter.com/mylyapp"
+  #   [[Languages.en.socialIcon]]
+  #      icon = "ti-twitter-alt"
+  #     linkURL = "https://twitter.com/mylyapp"
       
-    [[Languages.en.socialIcon]]
-      icon = "ti-linkedin"
-      linkURL = "https://www.linkedin.com/company/mylyapp"
+  #   [[Languages.en.socialIcon]]
+  #     icon = "ti-linkedin"
+  #     linkURL = "https://www.linkedin.com/company/mylyapp"
       
-    [[Languages.en.socialIcon]]
-     icon = "ti-youtube"
-      linkURL = "https://www.youtube.com/channel/UCoqMaXL11uSeUL4VEoYDQtg"
+  #   [[Languages.en.socialIcon]]
+  #    icon = "ti-youtube"
+  #     linkURL = "https://www.youtube.com/channel/UCoqMaXL11uSeUL4VEoYDQtg"
 
-    [[Languages.en.socialIcon]]
-       icon = "ti-pinterest-alt"
-      linkURL= "https://www.pinterest.com/mylyapp/technologies-in-schools/"
+  #   [[Languages.en.socialIcon]]
+  #      icon = "ti-pinterest-alt"
+  #     linkURL= "https://www.pinterest.com/mylyapp/technologies-in-schools/"
 
 
 
